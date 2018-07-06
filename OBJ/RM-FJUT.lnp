@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"..\obj\main.o"
+"..\obj\stm32f4xx_it.o"
+"..\obj\system_stm32f4xx.o"
+"..\obj\bsp_gpio.o"
+"..\obj\bsp_tim.o"
+"..\obj\driver_buzzer.o"
+"..\obj\task_sysinit.o"
+"..\obj\task_control.o"
+"..\obj\startup_stm32f427xx.o"
+"..\obj\misc.o"
+"..\obj\stm32f4xx_gpio.o"
+"..\obj\stm32f4xx_rcc.o"
+"..\obj\stm32f4xx_syscfg.o"
+"..\obj\stm32f4xx_usart.o"
+"..\obj\stm32f4xx_tim.o"
+"..\obj\croutine.o"
+"..\obj\event_groups.o"
+"..\obj\list.o"
+"..\obj\queue.o"
+"..\obj\tasks.o"
+"..\obj\timers.o"
+"..\obj\port.o"
+"..\obj\heap_4.o"
+--strict --scatter "..\OBJ\RM-FJUT.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\OBJ\RM-FJUT.map" -o ..\OBJ\RM-FJUT.axf
